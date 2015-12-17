@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM armv7/armhf-ubuntu:14.04.3
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r memcache && useradd -r -g memcache memcache
